@@ -23,7 +23,7 @@ a {
 }
 
 /* navigation */
-#main-nav, #nav-page-list {
+#main-nav, #nav-page-list, #icon-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,4 +32,8 @@ a {
 #main-nav {
   background-color: #110110;
   color: #FFF;
+}
+
+.social-icon {
+  height: 50px;
 }
