@@ -12,14 +12,17 @@ ul {
   list-style: none;
 }
 
-li, h1{
-  margin: 10px;
+h1, button{
+  margin: 20px 10px 5px 10px;
   font-size: 2em;
 }
 
-a {
+button {
   color: #FFF;
+  background: none;
+  font-family: 'Heebo', sans-serif;
   text-decoration: none;
+  border: 0px;
 }
 
 /* navigation */
@@ -35,5 +38,11 @@ a {
 }
 
 .social-icon {
+  margin: 10px 5px 5px 5px;
   height: 50px;
+}
+
+.nav-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
