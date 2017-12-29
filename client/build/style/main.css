@@ -1,0 +1,35 @@
+/* main */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+font-family: 'Heebo', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li, h1{
+  margin: 10px;
+  font-size: 2em;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* navigation */
+#main-nav, #nav-page-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#main-nav {
+  background-color: #110110;
+  color: #FFF;
+}
