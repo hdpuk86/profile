@@ -46,3 +46,14 @@ button {
   text-decoration: underline;
   cursor: pointer;
 }
+
+/* main content */
+#main-container {
+
+}
+
+/* footer */
+#footer {
+  background-color: #110110;
+  color: #FFF;
+}
