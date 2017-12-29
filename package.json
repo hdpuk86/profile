@@ -12,7 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "body": "^5.1.0",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.1",
+    "parser": "^0.1.4"
   },
   "devDependencies": {
     "webpack": "^3.10.0"
