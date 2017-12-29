@@ -65,9 +65,57 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var PortfolioView = __webpack_require__(2);
+var Request = __webpack_require__(1);
+
+var onLoad = function(){
+  new Request('/portfolio', PortfolioView);
+};
+
+window.addEventListener('load', onLoad);
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
+var Request = function(url, callback) {
+  var onRequestLoad = function(event) {
+    if (this.status !== 200) return callback([]);
+    var resultString = event.target.responseText;
+    var result = JSON.parse(resultString);
+    callback(result);
+  };
 
+  var startRequest = function() {
+    var request = new XMLHttpRequest();
+    request.open('GET', url);
+    request.addEventListener('load', onRequestLoad);
+    request.send();
+  };
+
+  startRequest();
+};
+
+module.exports = Request;
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+var PortfolioView = function(projects) {
+  var div = document.getElementById('main-container');
+  projects.forEach((project) => {
+    var name = document.createElement('h2');
+    name.innerText = project.name;
+    div.appendChild(name);
+  });
+};
+
+module.exports = PortfolioView;
 
 
 /***/ })
