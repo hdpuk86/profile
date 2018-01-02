@@ -13,8 +13,12 @@ ul {
 }
 
 h1, button{
-  margin: 20px 10px 5px 10px;
+  margin: 20px 10px 0px 10px;
   font-size: 2em;
+}
+
+p {
+  margin: 0px 10px 5px 10px;
 }
 
 button {
@@ -38,8 +42,8 @@ button {
 }
 
 .social-icon {
-  margin: 10px 5px 5px 5px;
-  height: 50px;
+  margin: 20px 5px 5px 5px;
+  height: 40px;
 }
 
 .nav-btn:hover {
@@ -64,22 +68,23 @@ button {
   text-align: center;
 }
 
+.project-img-div:hover {
+  cursor: pointer;
+  filter: grayscale(0.95);
+}
+
 .project-img {
   height: 100%;
 }
 
-.project-img:hover {
-  cursor: pointer;
-  filter: grayscale(0.75);
-}
-
-.projectName {
+.project-name {
   font-size: 2em;
   color: #FFF;
   position: absolute;
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, -10%);
+  visibility: hidden;
 }
 
 /* footer */
