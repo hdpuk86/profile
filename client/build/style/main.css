@@ -66,6 +66,15 @@ button {
   height: 100%;
 }
 
+.project-img:hover {
+  cursor: pointer;
+  filter: grayscale(0.75);
+}
+
+.projectName {
+  color: #FFF;
+}
+
 /* footer */
 #footer {
   background-color: #000;
