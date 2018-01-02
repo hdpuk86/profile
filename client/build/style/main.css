@@ -33,7 +33,7 @@ button {
 }
 
 #main-nav {
-  background-color: #110110;
+  background-color: #000;
   color: #FFF;
 }
 
@@ -52,7 +52,9 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  overflow-x: hidden;
+  justify-content: center;
+  background-color: #000;
+  height: 100vh;
   overflow-y: scroll;
 }
 
@@ -66,6 +68,6 @@ button {
 
 /* footer */
 #footer {
-  background-color: #110110;
+  background-color: #000;
   color: #FFF;
 }
