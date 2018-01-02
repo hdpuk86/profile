@@ -66,11 +66,16 @@ button {
   height: 400px;
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 
 .project-img-div:hover {
   cursor: pointer;
   filter: grayscale(0.95);
+}
+
+.project-img-div:hover img{
+  transform: scale(1.2);
 }
 
 .project-img {
