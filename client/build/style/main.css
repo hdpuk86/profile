@@ -60,6 +60,8 @@ button {
 
 .project-img-div {
   height: 400px;
+  position: relative;
+  text-align: center;
 }
 
 .project-img {
@@ -72,7 +74,12 @@ button {
 }
 
 .projectName {
+  font-size: 2em;
   color: #FFF;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
 }
 
 /* footer */

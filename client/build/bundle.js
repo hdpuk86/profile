@@ -82,7 +82,7 @@ window.addEventListener('load', onLoad);
 /***/ (function(module, exports) {
 
 var addHover = function(project, img){
-  var div = document.getElementById(`${project.name-img-div}`);
+  var div = document.getElementById(`${project.name}-img-div`);
   img.addEventListener('mouseover', function(){
     var name = document.createElement('h2');
     name.innerText = project.name;
@@ -99,7 +99,7 @@ var PortfolioView = function(projects) {
   projects.forEach((project) => {
     var imageDiv = document.createElement('div');
     imageDiv.className = 'project-img-div';
-    imageDiv.id = `${project.name-img-div}`;
+    imageDiv.id = `${project.name}-img-div`;
     var img = document.createElement('img');
     img.className = 'project-img';
     img.src = project.squareImage;
