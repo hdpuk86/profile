@@ -8,7 +8,7 @@ db.projects.insertMany([
     github: 'https://github.com/hdpuk86/android_slot_machine',
     url: null,
     mainImage: 'images/portfolio/safariSlots.png',
-    squareImage: 'images/portfolio/safariSquare.png'
+    squareImage: 'images/portfolio/slotsSquare.jpeg'
   },
   {
     name: 'Animal Shelter',
