@@ -67,8 +67,8 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var PortfolioView = __webpack_require__(2);
-var Request = __webpack_require__(1);
+var PortfolioView = __webpack_require__(1);
+var Request = __webpack_require__(2);
 
 var onLoad = function(){
   new Request('/portfolio', PortfolioView);
@@ -79,6 +79,26 @@ window.addEventListener('load', onLoad);
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+var PortfolioView = function(projects) {
+  var div = document.getElementById('main-container');
+  projects.forEach((project) => {
+    var imageDiv = document.createElement('div');
+    imageDiv.className = 'project-img-div';
+    var img = document.createElement('img');
+    img.className = 'project-img';
+    img.src = project.squareImage;
+    imageDiv.appendChild(img);
+    div.appendChild(imageDiv);
+  });
+};
+
+module.exports = PortfolioView;
+
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 var Request = function(url, callback) {
@@ -100,26 +120,6 @@ var Request = function(url, callback) {
 };
 
 module.exports = Request;
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-var PortfolioView = function(projects) {
-  var div = document.getElementById('main-container');
-  projects.forEach((project) => {
-    var imageDiv = document.createElement('div');
-    imageDiv.className = 'project-img-div';
-    var img = document.createElement('img');
-    img.className = 'project-img';
-    img.src = project.squareImage;
-    imageDiv.appendChild(img);
-    div.appendChild(imageDiv);
-  });
-};
-
-module.exports = PortfolioView;
 
 
 /***/ })

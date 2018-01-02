@@ -52,6 +52,8 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .project-img-div {
